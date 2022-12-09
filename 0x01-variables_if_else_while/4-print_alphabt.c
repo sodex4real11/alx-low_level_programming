@@ -1,23 +1,21 @@
-#include <stdio.h>                                                                                                                                                                              
-#include <stdlib.h>                                                                                                                                                                             
-                                                                                                                                                                                             
-/**                                                                                                                                                                                             
- * main - returns alphabets both except e and q
+#include <stdio.h>
+/**
+ * main - Entry point
  *
- * Return: Always 0 (Success)
- */     
+ * Return: Always 0 (success)
+ */
 
-int main(void)                                                                                                                                                                                  
+int main(void)
+{
+	char c;
 
-{                                                                                                                                                                                               
-        char ch = 'a';                                                                                                                                                                                                                                                                                                                                                                       
-        while (ch <= 'z')                                                                                                                                                                       
-        {
-		if ((ch != 'e') && (ch != 'q'))
-		{		
-	        	putchar(ch);
-		}			
-	        ch++;                                                                                                                                                                           
-        }                                                                                                                                                                                       
-        putchar('\n');                                                                                                                                                                          
-        return (0);                                                                                                                                                                             }
+	c = 'a';
+	while
+		(c <= 'z') {
+			if ((c != 'q' && c != 'e') && c <= 'z')
+				putchar(c);
+			c++;
+		}
+	putchar('\n');
+	return (0);
+}
