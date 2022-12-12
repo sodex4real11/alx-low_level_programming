@@ -24,6 +24,7 @@ int main(void)
 				if (!(ones == '9' && tens == '8'))/*add comma and space*/
 				{
 					putchar(',');
+					putchar(',');
 				}
 			}
 		}
