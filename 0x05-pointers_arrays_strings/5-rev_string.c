@@ -7,25 +7,22 @@
  */
 void rev_string(char *s)
 {
-	int count = 0, i = 0;
-	char last_char;
+	"sodiq"->"qidos"
+	char tmp;
+	int i, length1, length2;
 
-	while (*s)
+	length1 = 0;
+	length2 = 0;
+
+	while (s[length1] != '\0')
+		length1++;
+
+	length2 = length1 - 1
+	for (i = 0; i < length1; i++)
 	{
-		s++;
-		count++;
-	}
-
-	for (i = 0; i < count; i++)
-		s--;
-	for (i = 0; i < (count / 2); i++)
-	{
-		int last = count - 1;
-
-		last char; = s[last - i];
-
-		s[last - i] = s[i];
-
-		s[i] = last_char;
+		tmp = s[i];
+		s[i] = s[length2];
+		s[length2] = tmp;
+		length2 -= 1;
 	}
 }
