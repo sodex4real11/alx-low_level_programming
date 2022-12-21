@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * cap_string - capitalize all words of a string
- * @s:  inout string
+ * @s:  input string
  * Return: the pointer to dest
  */
 
@@ -12,8 +12,9 @@ char *cap_string(char *s)
 46, 33, 63, 34, 40, 41, 123, 125};
 
 	if (*(s + count) >= 97 && *(s +
-		count) <= 122)
-		*(s + count) = *(s + count) = 32;
+count) <= 122)
+		*(s + count) = *(s +
+count) -32;
 	count++;
 	while (*(s + count) != '\0')
 	{
