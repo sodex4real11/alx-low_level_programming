@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * point_array - prints n element of an array of integers, followed by \
  * a new line
@@ -11,15 +13,13 @@
 void print_array(int *a, int n)
 
 {
-	int count = 0;
+	int i = 0;
 
-	while (count < n)
+	for (; i < n; i++)
 	{
-		printf("%d", a[count]);
-
-		if (count != (n - 1))
+		printf("%d", *(a + i));
+		if (i != (n - 1))
 			printf(", ");
-		count++;
 	}
-	putchar('\n');
+	putchar("\n");
 }
