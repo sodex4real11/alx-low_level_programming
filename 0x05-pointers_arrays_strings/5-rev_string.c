@@ -22,7 +22,7 @@ void rev_string(char *s)
 	{
 		int last = count - 1;
 
-		last char = s[last - i];
+		last char; = s[last - i];
 
 		s[last - i] = s[i];
 
