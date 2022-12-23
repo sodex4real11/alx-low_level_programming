@@ -24,6 +24,6 @@ x[a] <= 122))
 		}
 		a++;
 	}
-	printf("%s" x)
+	printf("%s" x);
 	return (x);
 }
