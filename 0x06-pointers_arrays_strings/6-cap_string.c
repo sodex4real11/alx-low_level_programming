@@ -1,11 +1,11 @@
 #include "main.h"
 /**
  * cap_string - capitalize all words of a string
- * @s:  string param
+ * @x: string param
  * Return: capitalized version of the string
  */
 
-char *cap_string(char *s)
+char *cap_string(char *x)
 {
 	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(',
 ')', '{', '}'};
@@ -17,13 +17,11 @@ char *cap_string(char *s)
 		i = 0;
 		while (i < len)
 		{
-			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 &&
-x[a] <= 122))
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
 				x[a] = x[a] - 32;
 			i++;
 		}
 		a++;
 	}
-	printf("%s" x);
 	return (x);
 }
