@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * rot13 - encodes a string using rot13
- *
- * @s: input string.
+ * @s: pointer to string params
  * Return: *s
  */
 
