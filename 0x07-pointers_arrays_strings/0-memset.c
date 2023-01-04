@@ -2,17 +2,19 @@
 
 /**
  * _memset - this memory set function
- * @s: string
- * @b: a character
- * @n: an integer
- * Return: a string
+ * @s: source string
+ * @b: the contant byte for filling
+ * @n: length of buffer
+ * Return: new string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int a;
+	unsigned int i = 0;
 
-	for (a = 0; a < n; a++)
-		s[a] = b;
-
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
 	return (s);
 }
