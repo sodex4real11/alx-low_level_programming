@@ -9,7 +9,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i, size1;
-	unsigned int sunDiag1, sunDiag2;
+	unsigned int sumDiag1, sumDiag2;
 
 	size1 = 0;
 	sumDiag1 = 0;
@@ -25,6 +25,6 @@ void print_diagsums(int *a, int size)
 	{
 		sumDiag2 = sumDiag2 + a[i];
 	}
-	printf("%d, %d\n", sunDiag1, sumDiag2);
+	printf("%d, %d\n", sumDiag1, sumDiag2);
 }
 
