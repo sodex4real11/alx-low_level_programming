@@ -7,13 +7,14 @@
  * Return: the pointer to dest.
  */
 
-	char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
-	unsigned char *memory = s, value = b;
+	int i = 0;
 
 	for (i = 0; i < n; i++)
-		memory[index] = value;
-
-	return (memory);
+	{
+		s[i] = b;
+		n--;
+	}
+	return (s);
 }
