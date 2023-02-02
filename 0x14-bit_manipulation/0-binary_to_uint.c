@@ -20,14 +20,17 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] > 49)
 			return (0);
+
 		else if (b[i] == 49)
 		{
 			num <<= 1;
 			num += 1;
 		}
+		
 		else
 			num <<= 1;
 		i++;
 	}
+
 	return (num);
 }
