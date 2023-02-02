@@ -14,12 +14,12 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b || !*b)
 		return (0);
+
 	num = i = 0;
 	while (b[i])
 	{
 		if (b[i] > 49)
 			return (0);
-
 		else if (b[i] == 49)
 		{
 			num <<= 1;
@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 			num <<= 1;
-			i++;
+		i++;
 	}
 	return (num);
 }
