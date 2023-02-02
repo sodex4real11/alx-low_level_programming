@@ -16,6 +16,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 
 	num = i = 0;
+	
 	while (b[i])
 	{
 		if (b[i] > 49)
